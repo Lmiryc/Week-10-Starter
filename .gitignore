@@ -46,3 +46,6 @@ yarn-error.*
 
 
 *.docx
+
+# Storybook build
+/storybook-static/
