@@ -5,10 +5,10 @@ This Expo SDK 58 prototype uses the published component library's package entry 
 ```sh
 cd demo
 npm ci
-npm start
+npm start -- --go
 ```
 
-Press **i** in the Expo terminal to open an iOS simulator, **a** for Android, or **w** for web. You can also run `npm run web`. Use an Expo Go build that supports SDK 58. The start and export scripts copy the Skia CanvasKit binary for web.
+Use Expo Go for SDK 58. On a phone connected to the same Wi-Fi network, scan the QR code shown by Expo. Press **i** in the Expo terminal for the iOS simulator, **a** for the Android emulator, or **w** for web. The start and export scripts copy the Skia CanvasKit binary for web.
 
 ## Try the prototype
 
