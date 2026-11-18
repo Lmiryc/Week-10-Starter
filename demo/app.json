@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "PantryShare",
+    "slug": "pantryshare-skia-demo",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F8F6EE",
+    "ios": { "supportsTablet": true },
+    "web": { "bundler": "metro", "output": "single" }
+  }
+}
