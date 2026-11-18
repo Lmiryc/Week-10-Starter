@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{c as t,t as n}from"./src-DG6Yqmlz.js";var r,i,a,o;function s(){return(s=e((()=>{n(),r={title:`Components/Impact Chart`,component:t,tags:[`autodocs`],args:{title:`Community impact`,data:[{label:`Mon`,value:5},{label:`Tue`,value:8},{label:`Wed`,value:6},{label:`Thu`,value:12},{label:`Fri`,value:10},{label:`Sat`,value:17},{label:`Sun`,value:14}]}},i={},a={args:{data:[]}},o=[`WeeklyPortions`,`Empty`],i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{}`,...i.parameters?.docs?.source}}},a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+  args: {
+    data: []
+  }
+}`,...a.parameters?.docs?.source}}}})))()}s();export{a as Empty,i as WeeklyPortions,o as __namedExportsOrder,r as default};

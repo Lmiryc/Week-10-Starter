@@ -28,6 +28,7 @@
     "build": "tsup",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o storybook-static",
+    "build-pages": "storybook build -o components",
     "verify": "npm run check && npm run build && npm run build-storybook"
   },
   "peerDependencies": {

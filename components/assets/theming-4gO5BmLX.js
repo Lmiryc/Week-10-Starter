@@ -1,0 +1,1 @@
+import"./react-CAfMLIKe.js";import{_ as e,c as t}from"./theming-B89YSB6y.js";t();export{e as color};

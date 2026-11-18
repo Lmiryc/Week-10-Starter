@@ -2,6 +2,12 @@
 
 Six React Native graphics components for the PantryShare Expo app. Storybook renders the same library source in the browser through React Native Web and CanvasKit. The package entry point exports the components, TypeScript props, and color tokens.
 
+## Interactive component gallery
+
+[Open the full Storybook](./components/) to try all six components, switch between examples, and adjust props in the Controls panel.
+
+<iframe src="./components/iframe.html?id=pantryshare-overview--gallery&amp;viewMode=story" title="PantryShare Skia component gallery" width="100%" height="660" loading="lazy" style="border:1px solid #dde6d9;border-radius:12px;"></iframe>
+
 ## Where the components fit
 
 | PantryShare feature | Component | App data |
@@ -48,15 +54,15 @@ import { AvailabilityMeter, ProgressRing, PickupCountdown } from 'pantryshare-sk
 
 The countdown is a display derived from timestamps. Your reservation workflow remains responsible for the actual cutoff. Set `animated` on `FeatureBanner` to enable subtle native motion that respects the device's reduced motion setting. If your Expo app also targets web, initialize CanvasKit before importing the library. Follow the [React Native Skia web setup](https://wcandillon.github.io/react-native-skia/v2/docs/getting-started/web/).
 
-## Publish Storybook later
+## Update the published gallery
 
-The workflow builds `storybook-static/` on pushes to `yclmir`. It deploys only when you enable the repository variable.
+GitHub Pages serves this README and the static Storybook in `components/` from the root of `yclmir`. When you change a component or story, run:
 
-1. Set **Settings → Pages → Source** to **GitHub Actions** on your fork.
-2. Under **Settings → Secrets and variables → Actions → Variables**, set `PUBLISH_PANTRYSHARE_STORYBOOK` to `true`. If the `github-pages` environment restricts deployment branches, allow `yclmir`.
-3. Push `yclmir`. The workflow renders the Pages URL in the deployment job when it finishes.
+```sh
+npm run build-pages
+```
 
-The catalog uses relative asset URLs and includes the same version of the CanvasKit WASM used by Skia. The expected project URL for the current fork is [lmiryc.github.io/Week-10-Starter/](https://lmiryc.github.io/Week-10-Starter/).
+Commit the updated `components/` output along with the source changes and push `yclmir`. The Storybook assets and CanvasKit binary load from the same Pages site.
 
 ## Project structure
 
@@ -64,3 +70,4 @@ The catalog uses relative asset URLs and includes the same version of the Canvas
 - `src/index.ts` defines the app-facing package exports.
 - `src/stories/` contains mock examples and interactive Storybook controls.
 - `dist/` contains the JavaScript bundle and type declarations for Git installs.
+- `components/` contains the generated Storybook files for GitHub Pages.
